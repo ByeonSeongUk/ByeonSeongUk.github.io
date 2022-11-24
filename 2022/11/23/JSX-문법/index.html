@@ -6,19 +6,25 @@
     
 
     
-    <title>tags | Github blog</title>
+    <title>JSX 문법 | Github blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/tags/index.html">
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="JSX 문법 💡 리액트에서 레이아웃 만들 때 쓰는 문법   원래 React &lt;div&gt;를 만드는 방법1React.createElement(&amp;#x27;div&amp;#x27;, null, &amp;#x27;Hello World&amp;#x27;)  JSX 로 &lt;div&gt;를 만드는 방법1&lt;div&gt;Hello World&lt;&#x2F;div&gt;   JSX 문">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSX 문법">
+<meta property="og:url" content="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/index.html">
 <meta property="og:site_name" content="Github blog">
+<meta property="og:description" content="JSX 문법 💡 리액트에서 레이아웃 만들 때 쓰는 문법   원래 React &lt;div&gt;를 만드는 방법1React.createElement(&amp;#x27;div&amp;#x27;, null, &amp;#x27;Hello World&amp;#x27;)  JSX 로 &lt;div&gt;를 만드는 방법1&lt;div&gt;Hello World&lt;&#x2F;div&gt;   JSX 문">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-11-22T08:28:47.000Z">
-<meta property="article:modified_time" content="2022-11-22T08:28:47.025Z">
+<meta property="og:image" content="https://github.com/post_images/thumbnail/coverImg-React.png">
+<meta property="article:published_time" content="2022-11-23T12:32:00.000Z">
+<meta property="article:modified_time" content="2022-11-24T04:01:46.093Z">
 <meta property="article:author" content="Seong Uk">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/post_images/thumbnail/coverImg-React.png">
     
 
     
@@ -144,24 +150,51 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/tags/index.html">tags</em>
+    <a class="page-title-link" href="/categories/React/">React</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-JSX-문법" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        tags
+        JSX 문법
         </h1>
     
 
             </header>
         
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/" class="article-date">
+       <time datetime="2022-11-23T12:32:00.000Z" itemprop="datePublished">2022-11-23</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/" class="article-date">
+     <time datetime="2022-11-24T04:01:46.093Z" itemprop="dateModified">2022-11-24</time>
+  </a>
+</div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
         
         
         <div class="article-entry" itemprop="articleBody">
@@ -171,14 +204,39 @@
 
             
 
-            
+            <h1 id="JSX-문법"><a href="#JSX-문법" class="headerlink" title="JSX 문법"></a>JSX 문법</h1><hr>
+<p>💡 리액트에서 레이아웃 만들 때 쓰는 문법 </p>
+<hr>
+<h3 id="원래-React-lt-div-gt-를-만드는-방법"><a href="#원래-React-lt-div-gt-를-만드는-방법" class="headerlink" title="원래 React &lt;div&gt;를 만드는 방법"></a>원래 React <code>&lt;div&gt;</code>를 만드는 방법</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">React</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;div&#x27;</span>, <span class="literal">null</span>, <span class="string">&#x27;Hello World&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="JSX-로-lt-div-gt-를-만드는-방법"><a href="#JSX-로-lt-div-gt-를-만드는-방법" class="headerlink" title="JSX 로 &lt;div&gt;를 만드는 방법"></a>JSX 로 <code>&lt;div&gt;</code>를 만드는 방법</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;<span class="title class_">Hello</span> <span class="title class_">World</span>&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="JSX-문법-1"><a href="#JSX-문법-1" class="headerlink" title="JSX 문법"></a>JSX 문법</h1><h2 id="1-class-적용-방법"><a href="#1-class-적용-방법" class="headerlink" title="1. class 적용 방법"></a>1. class 적용 방법</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HTML</span></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;App&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// React은 다르다</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;App&quot;</span>&gt;</span>&lt;/div</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-중괄호-문법-변수를-HTML에-넣는-방법"><a href="#2-중괄호-문법-변수를-HTML에-넣는-방법" class="headerlink" title="2. 중괄호 문법 (변수를 HTML에 넣는 방법)"></a>2. 중괄호 문법 (변수를 HTML에 넣는 방법)</h2><ul>
+<li><strong>데이터 바인딩</strong>이라고 한다.</li>
+<li>서버랑 통신할때 많이 사용</li>
+<li>서버에서 받아온 값을 변수로 선언해 담아두고 바로 HTML으로 출력하게함</li>
+<li><code>id</code>, <code>clssName</code>, <code>src</code> 등의 항목에도 중괄호 문법 사용 가능</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> post = <span class="string">&#x27;강남 초밥 맛집&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 원래 js에서의 변수를 넣는 사용법 (React에선 중괄호 문법으로 대체)</span></span><br><span class="line">	<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;h4&#x27;</span>).<span class="property">innerHTML</span> = post;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;App&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;black-nav&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>블로그임<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">			&#123;/* 중괄호 문법 사용 */&#125;</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">h4</span>&gt;</span>&#123;post&#125;<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-JSX의-style-적용-방법"><a href="#3-JSX의-style-적용-방법" class="headerlink" title="3. JSX의 style 적용 방법"></a>3. JSX의 style 적용 방법</h2><aside>
+💡 일반 HTML Style 적용 방법과 다르다! 카멜 케이스 형태로 넣어줘야 한다.
+
+<ol>
+<li>카멜 케이스 형태를 지켜야 한다. → <code>font-size**</code> X,    <code>fontSize</code> O</li>
+<li>오브젝트 형태로 넣어줘야 한다. → <code>속성명 : ‘속성값’</code></aside></li>
+</ol>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> post = <span class="string">&#x27;강남 초밥 맛집&#x27;</span>;</span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;App&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">	  &#123;/* React의 style 속성 사용 */&#125;</span></span><br><span class="line"><span class="language-xml">	  <span class="tag">&lt;<span class="name">h4</span> <span class="attr">style</span>=<span class="string">&#123;</span> &#123;<span class="attr">color:</span>&#x27;<span class="attr">red</span>&#x27;, <span class="attr">fontSize:</span>&#x27;<span class="attr">16px</span>&#x27;&#125; &#125;&gt;</span>&#123;post&#125;<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/tags/index.html" data-id="claujvjut0001dckd5efu9sk1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/" data-id="claujvjuy0003dckdc4nv13f9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -248,16 +306,24 @@
             "@type": "Person",
             "name": "Seong Uk"
         },
-        "headline": "tags",
-        "image": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io",
-        
-        
-        "datePublished": "2022-11-22",
-        "dateCreated": "2022-11-22",
-        "dateModified": "2022-11-22",
-        "url": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/tags/index.html",
-        "description": "",
-        "wordCount": 1
+        "headline": "JSX 문법",
+        "image": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/post_images/thumbnail/coverImg-React.png",
+        "keywords": "",
+        "genre": "React",
+        "datePublished": "2022-11-23",
+        "dateCreated": "2022-11-23",
+        "dateModified": "2022-11-24",
+        "url": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/JSX-문법/",
+        "description": "JSX 문법
+💡 리액트에서 레이아웃 만들 때 쓰는 문법 
+
+원래 React &lt;div&gt;를 만드는 방법1React.createElement(&#x27;div&#x27;, null, &#x27;Hello World&#x27;)
+
+JSX 로 &lt;div&gt;를 만드는 방법1&lt;div&gt;Hello World&lt;/div&gt;
+
+
+JSX 문",
+        "wordCount": 408
     }
 </script>
 
@@ -310,6 +376,29 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2022/11/24/%ED%95%A8%EA%BB%98%EC%9E%90%EB%9D%BC%EA%B8%B0-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            함께자라기 post 테스트
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">개발 환경 세팅</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -507,7 +596,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/tags/index.html';
+    var disqus_url = 'https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/';
     
     (function() {
     var dsq = document.createElement('script');
