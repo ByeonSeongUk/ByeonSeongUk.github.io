@@ -23,6 +23,27 @@
     
     
     <entry>
+      <title>함께자라기 post 테스트</title>
+      <link href="/2022/11/24/%ED%95%A8%EA%BB%98%EC%9E%90%EB%9D%BC%EA%B8%B0-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+      <url>/2022/11/24/%ED%95%A8%EA%BB%98%EC%9E%90%EB%9D%BC%EA%B8%B0-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Book </category>
+          
+          <category> 함께자라기 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Https post 테스트</title>
       <link href="/2022/11/23/https-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
       <url>/2022/11/23/https-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/</url>
@@ -31,6 +52,8 @@
       
       
       <categories>
+          
+          <category> Book </category>
           
           <category> Https </category>
           
