@@ -6,22 +6,22 @@
     
 
     
-    <title>개발 환경 세팅 | Github blog</title>
+    <title>JSX 문법 | Github blog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content="" />
     
-    <meta name="description" content="React Project 생성 Windows → Power Shell Mac → Terminal  1npx create-react-app [프로젝트명]   Create React App 으로 생성[링크]  기본 프로젝트 설명   폴더명 설명    node_modules 라이브러리 모음   public static 파일 모아두는곳 (이미지 등)   src 소">
+    <meta name="description" content="💡 주의사항  Return안에는 병렬로 태그 사용 금지  1234567return (    &#x2F;&#x2F; 아래처럼 사용 불가	&lt;div className&#x3D;&quot;App&quot;&gt;	&lt;&#x2F;div&gt;	&lt;div&gt;	&lt;&#x2F;div&gt;);    React에서 자료를 잠깐 보관할 때의 방법 → useState()사용  1234&#x2F;&#x2F; 기본 사용">
 <meta property="og:type" content="article">
-<meta property="og:title" content="개발 환경 세팅">
-<meta property="og:url" content="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/index.html">
+<meta property="og:title" content="JSX 문법">
+<meta property="og:url" content="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/State/index.html">
 <meta property="og:site_name" content="Github blog">
-<meta property="og:description" content="React Project 생성 Windows → Power Shell Mac → Terminal  1npx create-react-app [프로젝트명]   Create React App 으로 생성[링크]  기본 프로젝트 설명   폴더명 설명    node_modules 라이브러리 모음   public static 파일 모아두는곳 (이미지 등)   src 소">
+<meta property="og:description" content="💡 주의사항  Return안에는 병렬로 태그 사용 금지  1234567return (    &#x2F;&#x2F; 아래처럼 사용 불가	&lt;div className&#x3D;&quot;App&quot;&gt;	&lt;&#x2F;div&gt;	&lt;div&gt;	&lt;&#x2F;div&gt;);    React에서 자료를 잠깐 보관할 때의 방법 → useState()사용  1234&#x2F;&#x2F; 기본 사용">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/post_images/thumbnail/thumbnail-React.png">
-<meta property="article:published_time" content="2022-11-22T11:28:22.000Z">
-<meta property="article:modified_time" content="2022-11-24T08:49:21.144Z">
+<meta property="article:published_time" content="2022-11-23T12:32:00.000Z">
+<meta property="article:modified_time" content="2022-11-30T00:24:17.631Z">
 <meta property="article:author" content="Seong Uk">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/post_images/thumbnail/thumbnail-React.png">
@@ -157,14 +157,14 @@
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-개발-환경-세팅" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-State" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        개발 환경 세팅
+        JSX 문법
         </h1>
     
 
@@ -175,16 +175,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/" class="article-date">
-       <time datetime="2022-11-22T11:28:22.000Z" itemprop="datePublished">2022-11-22</time>
+    <a href="/2022/11/23/State/" class="article-date">
+       <time datetime="2022-11-23T12:32:00.000Z" itemprop="datePublished">2022-11-23</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/" class="article-date">
-     <time datetime="2022-11-24T08:49:21.144Z" itemprop="dateModified">2022-11-24</time>
+  <a href="/2022/11/23/State/" class="article-date">
+     <time datetime="2022-11-30T00:24:17.631Z" itemprop="dateModified">2022-11-30</time>
   </a>
 </div>
 
@@ -206,57 +206,101 @@
 
             
 
-            <h1 id="React-Project-생성"><a href="#React-Project-생성" class="headerlink" title="React Project 생성"></a>React Project 생성</h1><ul>
-<li>Windows → Power Shell</li>
-<li>Mac → Terminal</li>
+            <p><strong>💡 주의사항</strong></p>
+<ul>
+<li>Return안에는 병렬로 태그 사용 금지</li>
 </ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create<span class="literal">-react-app</span> [프로젝트명]</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="Create-React-App-으로-생성"><a href="#Create-React-App-으로-생성" class="headerlink" title="Create React App 으로 생성"></a>Create React App 으로 생성</h1><p><a target="_blank" rel="noopener" href="https://create-react-app.dev/">[링크]</a></p>
-<hr>
-<h1 id="기본-프로젝트-설명"><a href="#기본-프로젝트-설명" class="headerlink" title="기본 프로젝트 설명"></a>기본 프로젝트 설명</h1><table>
-<thead>
-<tr>
-<th align="center">폴더명</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">node_modules</td>
-<td>라이브러리 모음</td>
-</tr>
-<tr>
-<td align="center">public</td>
-<td>static 파일 모아두는곳 (이미지 등)</td>
-</tr>
-<tr>
-<td align="center">src</td>
-<td>소스코드 보관함 (App.js가 index)</td>
-</tr>
-<tr>
-<td align="center">package.json</td>
-<td>프로젝트 정보가 들어있다(라이브러리 등)</td>
-</tr>
-</tbody></table>
-<aside>
-💡 웹 페이지는 HTML로 이루어져야 하는데 React는 .JS로 이루어져 있다.
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> (</span><br><span class="line">    <span class="comment">// 아래처럼 사용 불가</span></span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;App&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<br>
 
 <ul>
-<li>App.js에 함수 안에 있는 HTML들을 index.html로 변환해 웹 페이지를 띄워달라고 요청하는 파일이 있다. → 그 파일이 index.js파일이다.</aside></li>
+<li>React에서 자료를 잠깐 보관할 때의 방법 → useState()사용</li>
 </ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 기본 사용 방법</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="keyword">let</span>[a, b] = <span class="title function_">useState</span>(<span class="string">&#x27;남자 코트 추천&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>a</code> : state에 보관한 자료</li>
+<li><code>b</code> : state 변경을 도와주는 함수</li>
+<li>위 문법은 JavaScript의 Destructuring 문법이다.</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 배열로도 사용 가능 (꺼낼땐 인덱싱)</span></span><br><span class="line"><span class="keyword">let</span> [글제목, a] = <span class="title function_">useState</span>([<span class="string">&#x27;남자 코트 추천&#x27;</span>, <span class="string">&#x27;여자 코트 추천&#x27;</span>, <span class="string">&#x27;아이 코트 추천&#x27;</span>]);</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="서버-실행-방법"><a href="#서버-실행-방법" class="headerlink" title="서버 실행 방법"></a>서버 실행 방법</h1><ul>
-<li>해당 프로젝트의 Root에서 Terminal을 연 후 아래 코드 실행</li>
+<h2 id="Destructuring-문법"><a href="#Destructuring-문법" class="headerlink" title="Destructuring 문법"></a>Destructuring 문법</h2><ul>
+<li>Array</li>
 </ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="built_in">start</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 일반적으로 배열을 사용시</span></span><br><span class="line"><span class="keyword">let</span> num = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = num[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">let</span> c = num[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Destructuring 문법 사용시 -&gt; 간단해진다.</span></span><br><span class="line"><span class="keyword">let</span> [a, c] = [<span class="number">1</span>, <span class="number">2</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="변수와-useState-의-차이점"><a href="#변수와-useState-의-차이점" class="headerlink" title="변수와 useState()의 차이점"></a>변수와 useState()의 차이점</h2><ul>
+<li>데이터의 변경시 변수에 담아두면 바로 반영을 안해줌</li>
+<li>useState() 의 사용시 <strong>데이터의 변경</strong>이 일어날때 <strong>자동으로 재랜더링</strong> 된다.</li>
+</ul>
+<aside>
+💡 상황에 맞게 변수와 State를 잘 맞춰 사용해야 한다!
+
+</aside>
+
+<ul>
+<li><strong>자주 변경될 것 같은 html 부분</strong>은 <code>**state</code> 를 사용**</li>
+<li><strong>자주 변경이 되지 않을때</strong> <code>**변수</code>** 를 사용</li>
+</ul>
+<aside>
+💡 **ERROR** 와 **WARING** 메시지
+
+<ul>
+<li><strong>ERROR</strong> 는 고쳐야 하는 메시지</li>
+<li><strong>WARING</strong> 은 경고 → 굳이 안고쳐도 되는 메시지</aside></li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* eslint-disable */</span> -&gt; 이 페이지 전체를 <span class="variable constant_">WARING</span> 안뜨게 무시</span><br><span class="line"><span class="keyword">import</span> logo <span class="keyword">from</span> <span class="string">&#x27;./logo.svg&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./App.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; useState &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="State의-변경-방법"><a href="#State의-변경-방법" class="headerlink" title="State의 변경 방법"></a>State의 변경 방법</h2><h3 id="잘못된-예시"><a href="#잘못된-예시" class="headerlink" title="잘못된 예시"></a><strong>잘못된 예시</strong></h3><ul>
+<li>등호로 변경하면 변경이 안된다.</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 잘못된 사용 예시</span></span><br><span class="line">&lt;span onClick=&#123;<span class="function">()=&gt;</span> &#123; likey = likey + <span class="number">1</span> &#125;&#125;&gt; 👍 &lt;/span&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="올바른-예시"><a href="#올바른-예시" class="headerlink" title="올바른 예시"></a><strong>올바른 예시</strong></h3><ul>
+<li>변경함수 사용으로 꼭! 변경 해줘야 한다.</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// state 사용시 a는 변수, b는 변경함수라고 설명함</span></span><br><span class="line"><span class="keyword">let</span> [a, b] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 즉, likey가 좋아요 갸수, likeyCount를 이용해 버튼 클릭시 +1 을 해주는 함수를 만든다.</span></span><br><span class="line"><span class="keyword">let</span> [likey, likeyCount] = <span class="title function_">useState</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">	<span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">&quot;App&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;<span class="name">h4</span>&gt;</span>&#123; 글제목[0] &#125;</span></span><br><span class="line"><span class="language-xml">			<span class="tag">&lt;<span class="name">span</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> &#123;likeyCount(likey++)&#125;&#125;&gt;👍<span class="tag">&lt;/<span class="name">span</span>&gt;</span> </span></span><br><span class="line"><span class="language-xml">			&#123;likey&#125;</span></span><br><span class="line"><span class="language-xml">		<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h3 id="state-의-Array-Object-형-변경-방법"><a href="#state-의-Array-Object-형-변경-방법" class="headerlink" title="state 의 Array, Object 형 변경 방법"></a>state 의 Array, Object 형 변경 방법</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [title, titleChange] = <span class="title function_">useState</span>([<span class="string">&#x27;남자 코트 추천&#x27;</span>, <span class="string">&#x27;여자 코트 추천&#x27;</span>, <span class="string">&#x27;아이 코트 추천&#x27;</span>]);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>잘못된 예시</strong></li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// !!! 이렇게 사용시 useSate(&#x27;여자 코트 추천&#x27;); 이런식으로 변경이 되어버림.</span></span><br><span class="line">&lt;button onClick=&#123;<span class="function">() =&gt;</span> &#123;<span class="title function_">titleChange</span>(title[<span class="number">0</span>]=<span class="string">&#x27;여자 코트 추천&#x27;</span>)&#125;&#125;&gt;<span class="variable constant_">BTN</span>&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>올바른 예시</strong></li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Array와 Object를 다룰 땐 원본은 보존하는게 좋다!</span></span><br><span class="line"><span class="comment">// 카피 문법</span></span><br><span class="line">&lt;button onClick=&#123;<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> copy = [...title]; <span class="comment">// ... 을 사용 하는 이유는 아래에서 설명</span></span><br><span class="line">  copy[<span class="number">0</span>] = <span class="string">&#x27;여자 코트 추천&#x27;</span>;</span><br><span class="line">  <span class="title function_">titleChange</span>(copy)</span><br><span class="line">  &#125;&#125;&gt;글수정&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>state 변경 함수 특징</strong><ul>
+<li>기존 state, 신규 state를 변경할때 조건을 따진다.<ol>
+<li><p>기존 state, 신규 state를 비교해 똑같으면 변경을 하지 않음(자원 절약을 위해)<br>  → <code>기존 state == 신규 state</code> 가 true면 데이터 변경 X</p>
+</li>
+<li><p>Array, Object의 특징은 배열의 데이터가 아닌 배열이 저장된 곳을 가르키는 화살표가 저장이 된다.</p>
+<p> <img src="/state_img1.jpg" alt="스크린샷 2022-11-27 오후 2.10.15.png"></p>
+<ul>
+<li>그러므로 <code>copyArray[0] = ‘데이터’;</code> 이런식으로 데이터를 변경하려고 해도 가르키는 화살표는 변경이 안되어서 state 변경 함수의 조건에 걸리기 때문에 변경이 안되는 것이다.</li>
+<li><code>[…title]</code> 를 사용하면 <code>…</code>은 <code>title</code>에 있는 <code>[]</code> 괄호를 벗겨주세요~ 라는 문법이다.<br> → <strong>Shallow copy</strong> 문법이라고 한다.</li>
+</ul>
+ <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 잘못된 예시</span></span><br><span class="line"><span class="keyword">let</span> copy = title; <span class="comment">// 배열이 저장된 위치를 가르키는 화살표가 저장 된다.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 올바른 예시</span></span><br><span class="line"><span class="keyword">let</span> copy = [...title] <span class="comment">// 배열을 가져와 데이터 자체를 복사한다.</span></span><br></pre></td></tr></table></figure>
+<p> <strong>💡State에 저장된 Array &#x2F; Object 변경시 Shallow copy를 만들어서 수정해야 한다!</strong></p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/" data-id="clb2x63rx000hr0kd17qf9mil" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/State/" data-id="clb2x63r70001r0kd8801anaf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -326,42 +370,26 @@
             "@type": "Person",
             "name": "Seong Uk"
         },
-        "headline": "개발 환경 세팅",
+        "headline": "JSX 문법",
         "image": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/post_images/thumbnail/thumbnail-React.png",
         "keywords": "",
         "genre": "React",
-        "datePublished": "2022-11-22",
-        "dateCreated": "2022-11-22",
-        "dateModified": "2022-11-24",
-        "url": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/22/개발-환경-세팅/",
-        "description": "React Project 생성
-Windows → Power Shell
-Mac → Terminal
+        "datePublished": "2022-11-23",
+        "dateCreated": "2022-11-23",
+        "dateModified": "2022-11-30",
+        "url": "https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/State/",
+        "description": "💡 주의사항
 
-1npx create-react-app [프로젝트명]
+Return안에는 병렬로 태그 사용 금지
 
-
-Create React App 으로 생성[링크]
-
-기본 프로젝트 설명
-
-
-폴더명
-설명
+1234567return (    // 아래처럼 사용 불가	&lt;div className=&quot;App&quot;&gt;	&lt;/div&gt;	&lt;div&gt;	&lt;/div&gt;);
 
 
 
-node_modules
-라이브러리 모음
+React에서 자료를 잠깐 보관할 때의 방법 → useState()사용
 
-
-public
-static 파일 모아두는곳 (이미지 등)
-
-
-src
-소",
-        "wordCount": 109
+1234// 기본 사용",
+        "wordCount": 720
     }
 </script>
 
@@ -416,20 +444,20 @@ src
         
 <nav id="article-nav">
     
-        <a href="/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2022/11/24/%ED%95%A8%EA%BB%98%EC%9E%90%EB%9D%BC%EA%B8%B0-post-%ED%85%8C%EC%8A%A4%ED%8A%B8/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            JSX 문법
+            함께자라기 post 테스트
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2022/11/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2022/11/23/JSX-%EB%AC%B8%EB%B2%95/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Hello World</p>
+        <p class="article-nav-title">JSX 문법</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -632,7 +660,7 @@ src
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/22/%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85/';
+    var disqus_url = 'https://github.com/ByeonSeongUk/ByeonSeongUk.github.io/2022/11/23/State/';
     
     (function() {
     var dsq = document.createElement('script');
